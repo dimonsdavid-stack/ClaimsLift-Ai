@@ -53,6 +53,7 @@ Process PHI unless a compliant HIPAA-ready environment and required agreements a
 Require daily human operations for normal workflows.
 
 Humans supervise only:
+FFVGGM                                       "C
 
 Compliance exceptions.
 Legal claims.

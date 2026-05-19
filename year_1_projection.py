@@ -9,7 +9,6 @@ def simulate_scenario(name, start_conversion, max_conversion, churn, lead_veloci
     months = 12
     avg_ticket = 1500
     base_lead_capacity = 3000
-    
     llm_cost_per_claim = 0.0015
     claims_per_client_per_mo = 4000
     stripe_fee = 0.029
