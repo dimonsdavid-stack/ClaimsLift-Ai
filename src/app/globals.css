@@ -1,0 +1,246 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-border: rgba(15, 23, 42, 0.06);
+  --neon-violet: #6d28d9;
+  --neon-teal: #0d9488;
+  --neon-rose: #db2777;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(109, 40, 217, 0.04) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(13, 148, 136, 0.04) 0px, transparent 50%);
+}
+
+/* Glassmorphism Classes for Premium Light Mode */
+.glass-panel {
+  background: var(--card-bg) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--card-border) !important;
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.glass-panel:hover {
+  border-color: rgba(109, 40, 217, 0.15) !important;
+  box-shadow: 0 16px 40px -10px rgba(109, 40, 217, 0.08) !important;
+}
+
+/* Redefine Dark Mode Tailwind Utilities to Premium Light Mode Elements */
+
+.text-white {
+  color: #0f172a !important; /* Dark slate instead of white */
+}
+
+.text-gray-400 {
+  color: #475569 !important; /* Slate 600 instead of faint grey */
+}
+
+.text-gray-300 {
+  color: #334155 !important; /* Slate 700 */
+}
+
+.text-gray-500 {
+  color: #64748b !important; /* Slate 500 */
+}
+
+.text-teal-300 {
+  color: #0f766e !important; /* Deep Teal 700 */
+}
+
+.text-teal-400 {
+  color: #0d9488 !important; /* Emerald Teal */
+}
+
+.text-violet-300 {
+  color: #5b21b6 !important; /* Deep Royal Purple */
+}
+
+.text-violet-400 {
+  color: #6d28d9 !important; /* Purple */
+}
+
+.text-amber-300 {
+  color: #b45309 !important; /* Amber 700 */
+}
+
+.text-amber-400 {
+  color: #d97706 !important; /* Amber 600 */
+}
+
+.text-red-300 {
+  color: #be123c !important; /* Red 700 */
+}
+
+.text-red-400 {
+  color: #e11d48 !important; /* Red 600 */
+}
+
+.text-green-300 {
+  color: #15803d !important; /* Green 700 */
+}
+
+.text-green-400 {
+  color: #16a34a !important; /* Green 600 */
+}
+
+/* Semi-transparent black backgrounds rewritten as premium light structures */
+.bg-black\/20 {
+  background-color: rgba(15, 23, 42, 0.02) !important;
+  border-color: rgba(15, 23, 42, 0.05) !important;
+}
+
+.bg-black\/30 {
+  background-color: rgba(15, 23, 42, 0.035) !important;
+  border-color: rgba(15, 23, 42, 0.06) !important;
+}
+
+.bg-black\/40 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(15, 23, 42, 0.06) !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02) !important;
+}
+
+.bg-black\/50 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+.bg-black\/60 {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+.bg-black\/70 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.bg-black\/80 {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+/* White-transparency overlays rewritten as light overlays */
+.bg-white\/2 {
+  background-color: rgba(15, 23, 42, 0.01) !important;
+}
+
+.bg-white\/5 {
+  background-color: rgba(15, 23, 42, 0.02) !important;
+}
+
+.bg-white\/10 {
+  background-color: rgba(15, 23, 42, 0.04) !important;
+  color: #0f172a !important;
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+.bg-white\/20 {
+  background-color: rgba(15, 23, 42, 0.07) !important;
+  color: #0f172a !important;
+}
+
+.hover\:bg-white\/5:hover {
+  background-color: rgba(15, 23, 42, 0.04) !important;
+}
+
+.hover\:text-white:hover {
+  color: #0f172a !important;
+}
+
+/* Clean Borders */
+.border-white\/5 {
+  border-color: rgba(15, 23, 42, 0.05) !important;
+}
+
+.border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+.border-white\/20 {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+/* Inputs, Textareas, and Dropdowns */
+input, select, textarea {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(15, 23, 42, 0.1) !important;
+  color: #0f172a !important;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.02) !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--neon-teal) !important;
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.1) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Pulse Glow Effects (Soft pastels for light mode) */
+.glow-teal {
+  box-shadow: 0 0 12px rgba(13, 148, 136, 0.25);
+  animation: pulse-glow-teal 2s infinite alternate;
+}
+
+.glow-violet {
+  box-shadow: 0 0 12px rgba(109, 40, 217, 0.25);
+  animation: pulse-glow-violet 2s infinite alternate;
+}
+
+@keyframes pulse-glow-teal {
+  0% { box-shadow: 0 0 8px rgba(13, 148, 136, 0.15); }
+  100% { box-shadow: 0 0 16px rgba(13, 148, 136, 0.35); }
+}
+
+@keyframes pulse-glow-violet {
+  0% { box-shadow: 0 0 8px rgba(109, 40, 217, 0.15); }
+  100% { box-shadow: 0 0 16px rgba(109, 40, 217, 0.35); }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(109, 40, 217, 0.4);
+}
+
+/* Sleek Neon Gradient Text for Light Mode */
+.gradient-text {
+  background: linear-gradient(135deg, #6d28d9 0%, #0d9488 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Keep the log streams and terminal components dark and stylish for high visual contrast */
+.terminal-console {
+  background-color: #0f172a !important;
+  color: #cbd5e1 !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.terminal-console * {
+  color: #cbd5e1 !important;
+}
+

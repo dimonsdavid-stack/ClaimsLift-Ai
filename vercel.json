@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron?secret=cocktailstix_secure_cron_token",
+      "schedule": "0 14 * * 1-5"
+    }
+  ]
+}
